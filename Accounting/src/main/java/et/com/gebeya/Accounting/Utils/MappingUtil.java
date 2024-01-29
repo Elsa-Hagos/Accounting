@@ -13,8 +13,8 @@ import org.springframework.stereotype.Component;
 @RequiredArgsConstructor
 public class MappingUtil {
     private static final ModelMapper modelMapper = new ModelMapper();
-    @Autowired
-    private CompanyRepo companyRepo;
+
+    private final CompanyRepo companyRepo;
 
     public CompanyResponseDto convertToCompanyResponseDto(CompanyInfo companyInfo) {
         return modelMapper.map(companyInfo, CompanyResponseDto.class);
