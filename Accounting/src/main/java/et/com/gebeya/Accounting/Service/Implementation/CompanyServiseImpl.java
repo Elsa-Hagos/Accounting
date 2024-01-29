@@ -22,7 +22,7 @@ private  MappingUtil mappingUtil;
  @Transactional
  public CompanyResponseDto createCompany(CompanyRequestDto companyRequestDto) {
      String companyName= companyRequestDto.getCompanyname();
-     if (companyRepo.findByName(companyName)){
+     if (companyRepo.findBycompanyname(companyName)){
          throw new  RuntimeException("company is already registered ");
      }
 

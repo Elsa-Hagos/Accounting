@@ -12,7 +12,7 @@ import lombok.*;
 @ToString
 @Builder
 @Entity
-public class User {
+public class Users {
 
 
 

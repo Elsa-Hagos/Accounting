@@ -11,5 +11,5 @@ import org.springframework.stereotype.Repository;
 @ComponentScan
 public interface CompanyRepo extends JpaRepository <CompanyInfo, Long > , JpaSpecificationExecutor<CompanyInfo> {
 
-   boolean findByName (String CompanyName);
+   boolean findBycompanyname (String CompanyName);
 }
